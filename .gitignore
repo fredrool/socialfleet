@@ -1,0 +1,6 @@
+/frontend/bower_components
+/frontend/node_modules
+/frontend/temp
+
+/backend/.tmp
+/backend/node_modules
