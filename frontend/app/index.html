@@ -9,12 +9,20 @@
 		  <!-- endinject -->
 	</head>
 	<body ng-controller="Login">
-		Hi !!! 111122222
+		<nav class="navbar navbar-default">
+			<button ng-show="isAuthenticated()" class="btn btn-link pull-right" ng-click="logout()">Logout</button>
+		</nav>
 
+		<div class="container">
+			<button ng-hide="isAuthenticated()" class="btn btn-primary" ng-click="login()">Login</button>
 
-
-		<button ng-click="login()">Login</button>
-
+			<div class="well">
+				<div class="form-group">
+					<input class="form-control" ng-model="message" placeholder="tweet message"></input>
+				</div>
+				<button class="btn btn-default" ng-click="tweet()">Tweet</button>	
+			</div>
+		</div>
 		  <!-- vendorInject:js -->
 		  <!-- endinject -->
 
